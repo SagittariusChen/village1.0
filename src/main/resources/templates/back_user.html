@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/back_nav.css">
+    <link rel="stylesheet" type="text/css" href="css/back_user.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.js"></script>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+        <a href="back_login.html"><input id="login_cancel" class="btn btn-default" type="button" name="" value="注销"></a>
+        <div id="person">
+            <a href="back_admin.html">
+                <img src="img/person.jpg" alt="" id="person_img">
+                <span id="person_name">admin</span>
+            </a>
+        </div>
+    </header>
+    <aside id="aside">
+        <header id="aside_head">后台管理</header>
+        <nav id="nav">
+            <a href="back_main.html" class="nav_link">首页</a>
+            <a href="back_admin.html" class="nav_link">管理员设置</a>
+            <a href="back_rural.html" class="nav_link">乡村管理</a>
+            <a href="back_text.html" class="nav_link">文章管理</a>
+            <a href="back_user.html" class="nav_link now_link">用户管理</a>
+            <a href="back_message.html" class="nav_link">消息处理</a>
+        </nav>
+    </aside>
+    <section id="main">
+        <header id="main_head" class="clearfix">
+            <input type="button" id="main_delect" class="btn btn-default" value="批量删除">
+            <select id="main_select" class="form-control">
+                <option value="按时间排序">按时间排序</option>
+                <option value="从早到晚">从早到晚</option>
+                <option value="从晚到早">从晚到早</option>
+            </select>
+            <div id="main_serchcon">
+                <input type="text" id="search" class="form-control" placeholder="内容">
+                <input type="button" id="search_input" class="btn btn-default" value="搜索">
+            </div>
+        </header>
+        <section class="main_sec">
+            <table id="main_table" class="table">
+                <thead>
+                    <tr>
+                        <th>选择</th>
+                        <th>用户名</th>
+                        <th>手机号码</th>
+                        <th>邮箱</th>
+                        <th>收藏的乡村</th>
+                        <th>收藏的文章</th>
+                        <th>编辑</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>李丹丹</td>
+                        <td>13555555555</td>
+                        <td>1905148155@qq.com</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td><input type="button" class="main_view btn btn-primary" value="查看编辑" data-toggle="modal" data-target="#myModal">
+                            <input
+                                type="button" class="main_delect btn btn-default" value="删除用户"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="page" class="clearfix"></div>
+        </section>
+    </section>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel" contenteditable="true">用户编辑</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="modal-input form-control" placeholder="李丹丹">
+                    <input type="text" class="modal-input form-control" placeholder="5464sfd5">
+                    <input type="text" class="modal-input form-control" placeholder="13555555555">
+                    <input type="text" class="modal-input form-control" placeholder="1905148155@qq.com">
+                    <input type="button" id="modal-submit" class="btn btn-primary" value="更改用户信息">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wangEditor.min.js"></script>
+    <script type="text/javascript" src="js/zhang.js"></script>
+    <script type="text/javascript" src="js/back_user.js"></script>
+</body>
+
+</html>

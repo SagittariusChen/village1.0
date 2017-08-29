@@ -1,0 +1,164 @@
+#main {
+    float: left;
+    margin-top: 20px;
+    width: 70%;
+}
+
+#main_header {
+    width: 100%;
+    max-height: 230px;
+    overflow: hidden;
+}
+
+#header_img {
+    width: 100%;
+}
+
+#main_ul {}
+
+#main_ul>li {
+    padding: 15px 0;
+    height: 135px;
+    border-bottom: 1px solid #ccc;
+}
+
+#main_ul>li:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img_con {
+    float: left;
+    margin-right: 15px;
+    height: 100%;
+    width: 160px;
+    overflow: hidden;
+}
+
+.main_img {
+    height: 100%;
+}
+
+.main_link,
+.main_info,
+.main_word {
+    float: left;
+    width: 70%;
+}
+
+.main_link {
+    font-size: 18px;
+    color: #222;
+}
+
+.main_info {
+    padding: 3px 0 6px 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.main_view,
+.main_time {
+    margin-right: 10px;
+}
+
+.main_view {
+    margin-left: 40px;
+}
+
+.main_word {
+    font-size: 13px;
+}
+
+#side {
+    float: left;
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 25%;
+}
+
+#side_ul {
+    padding-top: 10px;
+}
+
+#side_ul>li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.side_link {
+    font-size: 14px;
+    color: #222;
+}
+
+.side_info {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #999;
+}
+
+.side_view,
+.side_time {
+    margin-right: 6px;
+}
+
+.side_view {
+    margin-left: 40px;
+}
+
+#main_page {
+    margin-top: 20px;
+}
+
+.pageable-item {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    min-width: 50px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+}
+
+.pageable-item:hover {
+    color: black;
+    background-color: #eee;
+    text-decoration: none;
+}
+
+.pageable-first {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.pageable-end {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.pageable-active {
+    color: black;
+    background-color: #eee;
+}
+
+.pageable-disable:hover {
+    cursor: no-drop;
+    color: #337ab7;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+#footer {
+    margin-top: 45px;
+    padding: 40px 0;
+    background-color: #515151;
+    color: white;
+}
+
+#copyright {
+    text-align: center;
+}

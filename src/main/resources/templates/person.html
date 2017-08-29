@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美丽乡村</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/person.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.js"></script>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <div id="nav_container">
+        <div class="mycontainer clearfix">
+            <!--<img id="logo" src="http://oj7iva9la.bkt.clouddn.com/logo.png" alt="美丽乡村">-->
+            <img id="logo" src="img/1.png" style="width: 60px;height: 50px;margin-top: -4px;margin-left: 40px;" alt="">
+            <ul id="nav">
+                <li><a href="#" class="nav_link inow_link">首页</a></li>
+                <li><a href="#" class="nav_link">特色展示</a></li>
+                <li><a href="#" class="nav_link">新闻资讯</a></li>
+                <li><a href="#" class="nav_link">乡村风采</a></li>
+                <!--<li><a href="#" class="nav_link">新闻中心</a></li>-->
+                <li><a href="#" class="nav_link">联系我们</a></li>
+                <li><a href="#" class="nav_link">驴友推荐</a></li>
+            </ul>
+            <div id="sign_container">
+                <!--<span id="search_in" class="sign glyphicon glyphicon-search"></span>
+                <span id="search_out" class="sign glyphicon glyphicon-remove"></span>-->
+                <a href="#" class="sign" data-toggle="modal" data-target="#signup_modal">注册</a>
+                <a href="#" class="sign" data-toggle="modal" data-target="#signin_modal">登入</a>
+                <div id="person">
+                    <a href="#" class="person_link"><img src="img/person.jpg" alt=""><span>余伟伟</span></a>
+                    <div id="person_content">
+                        <a id="person_setting" href="#">个人中心</a>
+                        <a id="cancle" href="#">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 登入框 -->
+    <div class="modal fade" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_in" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                    <h4 class="modal-title" id="myModalLabel_in">
+                        SIGNIN
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p class="input_container"><img class="input_icon" src="img/user.png" alt=""><input type="text" id="text" class="input_control"
+                            placeholder="用户名"></p>
+                    <p class="input_container"><img class="input_icon" src="img/password.png" alt=""><input type="password" id="password" class="input_control"
+                            placeholder="密码"></p>
+                </div>
+                <div class="modal-footer">
+                    <div id="prompt_in"></div>
+                    <button type="button" id="signin_true" class="btn btn-primary">
+					登入
+				    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注册框 -->
+    <div class="modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_up" aria-hidden="true">
+        <div class="modal-dialog" id="dialog_up">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                    <h4 class="modal-title" id="myModalLabel_up">
+                        SIGNUP
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p class="input_container"><input type="text" id="text_up" class="input_control" placeholder="用户名"></p>
+                    <p class="input_container"><input type="password" id="password_up" class="input_control" placeholder="密码"></p>
+                    <p class="input_container"><input type="password" id="password_again" class="input_control" placeholder="确认密码"></p>
+                    <p class="input_container"><input type="text" id="phone" class="input_control" placeholder="手机号码"></p>
+                    <p class="input_container"><input type="text" id="phone_pass" class="input_control" placeholder="输入验证码"><input id="phone_get" type="button"
+                            class="btn btn-primary" value="获取验证码"><span id="countdown">已发送短信(30s)</span></p>
+                    <div id="v_container" class="input_container"></div>
+                </div>
+                <div class="modal-footer">
+                    <div id="prompt_up"></div>
+                    <button type="button" id="signup_true" class="btn btn-primary">
+					注册
+				    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 个人信息 查看更多 -->
+    <div class="modal fade" id="viewmore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="modal-view" class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					    &times;
+				    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        大师傅
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    在这里添加一些文本 男孩玩王者荣耀被团灭 报警称四个朋友被杀 大学保安深夜不敢去生命科学馆锁门 求女生陪同 男子斗地主不满工友出谋划策 一拳将其打成骨折 8旬老太被43吨重型吊车轧死 现场一滩红色血肉 男子为不上班费尽心机 刀插自己腿假装被打劫
+                    浙江横店拍摄剧组人员打架:2人受伤3人被拘
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        个人中心
+    </header>
+    <section id="main" class="mycontainer clearfix minheight">
+        <aside id="subnav_container">
+            <header id="subnav_person">
+                <img src="img/person.jpg" alt="抱歉，图片无法显示">
+                <p>余伟伟</p>
+            </header>
+            <ul id="subnav">
+                <li class="subnav_li inow_li">基本信息</li>
+                <li class="subnav_li">收藏夹</li>
+                <li class="subnav_li">我的信息</li>
+                <li class="subnav_li">推荐乡村</li>
+            </ul>
+        </aside>
+        <section id="modify">
+            <div id="modify_basic" class="modify_sec inow_sec">
+                <header class="clearfix modify_header">
+                    基本信息
+                </header>
+                <section id="basic">
+                    <div class="basic_line clearfix">
+                        <div class="basic_word">用户名：</div>
+                        <input class="hide basic_input form-control" type="text" placeholder="余伟伟">
+                        <div class="show basic_txt">余伟伟</div>
+                    </div>
+                    <div class="basic_line clearfix">
+                        <div class="basic_word">性别：</div>
+                        <label class="hide myradio" for="secret">保密<input type="radio" name="sex" id="secret" /></label>
+                        <label class="hide myradio" for="male">男<input type="radio" name="sex" id="male" /></label>
+                        <label class="hide myradio" for="female">女<input type="radio" name="sex" id="female" /></label>
+                        <div class="show basic_txt">男</div>
+                    </div>
+                    <div class="basic_line clearfix">
+                        <div class="basic_word">头像：</div>
+                        <img src="img/person.jpg" alt="" id="person_addimg">
+                        <div class="show" id="headerpic">个人头像</div>
+                        <div class="hide" id="addpic">添加图片<input type="file" id="file"></div>
+                    </div>
+                    <div class="basic_line clearfix">
+                        <div class="basic_word">邮箱：</div>
+                        <input class="hide basic_input form-control" type="text" placeholder="147******">
+                        <div class="show basic_txt">147******</div>
+                    </div>
+                    <!--<div class="basic_line clearfix">
+                        <div class="basic_word">个性签名：</div>
+                        <div class="hide textarea_con clearfix">
+                            <textarea id="person_tip" class="form-control" rows="10" cols="3" placeholder="亲自试一试浏览器支持 所有主流浏览器都支持 overflow 属性"></textarea>
+                            <input type="button" id="tip_fault" class="btn btn-default" value="取消">
+                            <input type="button" id="tip_true" class="btn btn-primary" value="更改">
+                        </div>
+                        <div class="show basic_txt">亲自试一试浏览器支持 所有主流浏览器都支持 overflow 属性</div>
+                    </div>-->
+                    <input type="button" class="show btn btn-primary" id="basic_change" value="编辑个人信息">
+                    <input type="button" class="hide btn btn-primary" id="basic_true" value="确认更改">
+                    <input type="button" class="hide btn btn-default" id="basic_false" value="取消">
+                    <input type="button" class="btn btn-link" id="basic_su" value="安全设置">
+                </section>
+            </div>
+            <div id="modify_su" class="hide">
+                <header class="clearfix modify_header">
+                    安全设置：
+                </header>
+                <section id="su_container">
+                    <div class="su_line clearfix">
+                        <div class="su_word">更改密码：</div>
+                        <input class="su_input form-control" type="text" placeholder="原密码">
+                        <input class="su_input form-control" type="text" placeholder="新密码">
+                        <input class="su_input form-control" type="text" placeholder="重新输入密码">
+                        <input type="button" class="btn btn-primary" id="su_true" value="确认更改密码">
+                        <input type="button" class="btn btn-primary" id="su_false" value="取消">
+                    </div>
+                    <div class="su_line clearfix">
+                        <div class="su_word">更改绑定手机：</div>
+                        <input class="su_input form-control" type="text" placeholder="新手机号">
+                        <input class="su_check form-control" type="text" placeholder="验证码">
+                        <input id="put_verify" class="su_get btn btn-primary" type="button" value="获取验证码">
+                        <div id="verify" class="su_get"></div>
+                        <input type="button" class="btn btn-primary clearfix" id="su_true" value="更改绑定手机">
+                    </div>
+                    <input type="button" class="btn btn-link" id="basic_return" value="基本信息">
+                </section>
+            </div>
+            <div id="collection" class="modify_sec">
+                <header id="colt_header">
+                    <input type="button" id="byword" class="btn btn-info" value="收藏的文章">
+                    <input type="button" id="byrural" class="btn btn-default" value="收藏的乡村">
+                </header>
+                <section id="word_main">
+                    <ul id="word_ul">
+                        <li class="word_sec">
+                            <a href="#">
+                                <div class="word_number">1</div>“美丽延庆·食在乡村”延庆乡村美食月拉开帷幕
+                                <div class="word_time">2017-12-11</div>
+                            </a>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </li>
+                        <li class="word_sec">
+                            <a href="#">
+                                <div class="word_number">1</div>“美丽延庆·食在乡村”延庆乡村美食月拉开帷幕
+                                <div class="word_time">2017-12-11</div>
+                            </a>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </li>
+                        <li class="word_sec">
+                            <a href="#">
+                                <div class="word_number">1</div>“美丽延庆·食在乡村”延庆乡村美食月拉开帷幕
+                                <div class="word_time">2017-12-11</div>
+                            </a>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </li>
+                        <li class="word_sec">
+                            <a href="#">
+                                <div class="word_number">1</div>“美丽延庆·食在乡村”延庆乡村美食月拉开帷幕
+                                <div class="word_time">2017-12-11</div>
+                            </a>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </li>
+                        <li class="word_sec">
+                            <a href="#">
+                                <div class="word_number">1</div>“美丽延庆·食在乡村”延庆乡村美食月拉开帷幕
+                                <div class="word_time">2017-12-11</div>
+                            </a>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </li>
+                        <li class="word_sec">
+                            <a href="#">
+                                <div class="word_number">1</div>“美丽延庆·食在乡村”延庆乡村美食月拉开帷幕
+                                <div class="word_time">2017-12-11</div>
+                            </a>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </li>
+                    </ul>
+                </section>
+                <section id="rural_main" class="hide">
+                    <div class="rural_sec">
+                        <a href="#">
+                            <img src="img/4_min.jpg" alt="" class="rural_img">
+                            <div class="rural_title">浙江延庆村</div>
+                            <div class="rural_time">2017-12-12</div>
+                        </a>
+                        <span class="rural_heart glyphicon glyphicon-heart"></span>
+                    </div>
+                    <div class="rural_sec">
+                        <a href="#">
+                            <img src="img/4_min.jpg" alt="" class="rural_img">
+                            <div class="rural_title">浙江延庆村</div>
+                            <div class="rural_time">2017-12-12</div>
+                        </a>
+                        <span class="rural_heart glyphicon glyphicon-heart"></span>
+                    </div>
+                    <div class="rural_sec">
+                        <a href="#">
+                            <img src="img/4_min.jpg" alt="" class="rural_img">
+                            <div class="rural_title">浙江延庆村</div>
+                            <div class="rural_time">2017-12-12</div>
+                        </a>
+                        <span class="rural_heart glyphicon glyphicon-heart"></span>
+                    </div>
+                    <div class="rural_sec">
+                        <a href="#">
+                            <img src="img/4_min.jpg" alt="" class="rural_img">
+                            <div class="rural_title">浙江延庆村</div>
+                            <div class="rural_time">2017-12-12</div>
+                        </a>
+                        <span class="rural_heart glyphicon glyphicon-heart"></span>
+                    </div>
+                    <div class="rural_sec">
+                        <a href="#">
+                            <img src="img/4_min.jpg" alt="" class="rural_img">
+                            <div class="rural_title">浙江延庆村</div>
+                            <div class="rural_time">2017-12-12</div>
+                        </a>
+                        <span class="rural_heart glyphicon glyphicon-heart"></span>
+                    </div>
+                    <div class="rural_sec">
+                        <a href="#">
+                            <img src="img/4_min.jpg" alt="" class="rural_img">
+                            <div class="rural_title">浙江延庆村</div>
+                            <div class="rural_time">2017-12-12</div>
+                        </a>
+                        <span class="rural_heart glyphicon glyphicon-heart"></span>
+                    </div>
+                    <div class="rural_sec">
+                        <a href="#">
+                            <img src="img/4_min.jpg" alt="" class="rural_img">
+                            <div class="rural_title">浙江延庆村</div>
+                            <div class="rural_time">2017-12-12</div>
+                        </a>
+                        <span class="rural_heart glyphicon glyphicon-heart"></span>
+                    </div>
+                    <div class="rural_sec">
+                        <a href="#">
+                            <img src="img/4_min.jpg" alt="" class="rural_img">
+                            <div class="rural_title">浙江延庆村</div>
+                            <div class="rural_time">2017-12-12</div>
+                        </a>
+                        <span class="rural_heart glyphicon glyphicon-heart"></span>
+                    </div>
+                </section>
+                <footer id="colt_footer">
+                    <div id="page"></div>
+                </footer>
+            </div>
+            <div id="modify_infor" class="modify_sec">
+                <div id="table_container" class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>选择</th>
+                                <th>序号</th>
+                                <th>简要内容</th>
+                                <th>发信人</th>
+                                <th>时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" class="check"></td>
+                                <td>1</td>
+                                <td>你好！我是xxx，很高兴认识你......</td>
+                                <td>李某</td>
+                                <td>2017-12-12</td>
+                                <td><input type="button" class="readed btn btn-info" value="查看" data-toggle="modal" data-target="#viewmore">
+                                    <input
+                                        type="button" class="remove btn btn-default" value="删除"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="check"></td>
+                                <td>2</td>
+                                <td>你好！我是xxx，很高兴认识你......</td>
+                                <td>李某</td>
+                                <td>2017-12-12</td>
+                                <td><input type="button" class="readed btn btn-info" value="查看" data-toggle="modal" data-target="#viewmore">
+                                    <input
+                                        type="button" class="remove btn btn-default" value="删除"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="check"></td>
+                                <td>3</td>
+                                <td>你好！我是xxx，很高兴认识你......</td>
+                                <td>李某</td>
+                                <td>2017-12-12</td>
+                                <td><input type="button" class="readed btn btn-info" value="查看" data-toggle="modal" data-target="#viewmore">
+                                    <input
+                                        type="button" class="remove btn btn-default" value="删除"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="check"></td>
+                                <td>4</td>
+                                <td>你好！我是xxx，很高兴认识你......</td>
+                                <td>李某</td>
+                                <td>2017-12-12</td>
+                                <td><input type="button" class="readed btn btn-info" value="查看" data-toggle="modal" data-target="#viewmore">
+                                    <input
+                                        type="button" class="remove btn btn-default" value="删除"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="check"></td>
+                                <td>5</td>
+                                <td>你好！我是xxx，很高兴认识你......</td>
+                                <td>李某</td>
+                                <td>2017-12-12</td>
+                                <td><input type="button" class="readed btn btn-info" value="查看" data-toggle="modal" data-target="#viewmore">
+                                    <input
+                                        type="button" class="remove btn btn-default" value="删除"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="check"></td>
+                                <td>6</td>
+                                <td>你好！我是xxx，很高兴认识你......</td>
+                                <td>李某</td>
+                                <td>2017-12-12</td>
+                                <td><input type="button" class="readed btn btn-info" value="查看" data-toggle="modal" data-target="#viewmore">
+                                    <input
+                                        type="button" class="remove btn btn-default" value="删除"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="check"></td>
+                                <td>7</td>
+                                <td>你好！我是xxx，很高兴认识你......</td>
+                                <td>李某</td>
+                                <td>2017-12-12</td>
+                                <td><input type="button" class="readed btn btn-info" value="查看" data-toggle="modal" data-target="#viewmore">
+                                    <input
+                                        type="button" class="remove btn btn-default" value="删除"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="check"></td>
+                                <td>8</td>
+                                <td>你好！我是xxx，很高兴认识你......</td>
+                                <td>李某</td>
+                                <td>2017-12-12</td>
+                                <td><input type="button" class="readed btn btn-info" value="查看" data-toggle="modal" data-target="#viewmore">
+                                    <input
+                                        type="button" class="remove btn btn-default" value="删除"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="check"></td>
+                                <td>9</td>
+                                <td>你好！我是xxx，很高兴认识你......</td>
+                                <td>李某</td>
+                                <td>2017-12-12</td>
+                                <td><input type="button" class="readed btn btn-info" value="查看" data-toggle="modal" data-target="#viewmore">
+                                    <input type="button" class="remove btn btn-default" value="删除"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="operation">
+                        <label id="allword" for="ope_check">全选</label>
+                        <input type="checkbox" id="ope_check">
+                        <input type="button" id="ope_remove" class="btn btn-primary" value="全部删除">
+                    </div>
+                </div>
+            </div>
+            <div id="mycomments" class="modify_sec">
+                <div id="com_tips"></div>
+                <input type="text" id="name" class="form-control" placeholder="乡村名称">
+                <input type="text" id="area" class="form-control" placeholder="地址">
+                <div id="file_con">上传封面图片：<input type="button" id="cover_button" class="btn btn-info" value="上传乡村封面"><input type="file" id="file_cover"></div>
+                <div id="wang_editor">
+                </div>
+                <p class="com_word">按地区分</p>
+                <div class="com_line clearfix">
+                    <input type="button" class="com_sele btn btn-default" value="江南水乡">
+                    <input type="button" class="com_sele btn btn-default" value="标签2">
+                    <input type="button" class="com_sele btn btn-default" value="标签3">
+                    <input type="button" class="com_sele btn btn-default" value="标签4">
+                </div>
+                <p class="com_word">按xx分</p>
+                <div class="com_line clearfix">
+                    <input type="button" class="com_sele btn btn-default" value="江南水乡">
+                    <input type="button" class="com_sele btn btn-default" value="标签2">
+                    <input type="button" class="com_sele btn btn-default" value="标签3">
+                    <input type="button" class="com_sele btn btn-default" value="标签4">
+                </div>
+                <p class="com_word">按xx分</p>
+                <div class="com_line clearfix">
+                    <input type="button" class="com_sele btn btn-default" value="江南水乡">
+                    <input type="button" class="com_sele btn btn-default" value="标签2">
+                    <input type="button" class="com_sele btn btn-default" value="标签3">
+                    <input type="button" class="com_sele btn btn-default" value="标签4">
+                </div>
+                <p class="com_word">其他</p>
+                <div id="com_other" class="clearfix">
+                    <input type="button" class="com_sele btn btn-default" value="江南水乡">
+                    <input type="button" class="com_sele btn btn-default" value="标签2">
+                    <input type="button" class="com_sele btn btn-default" value="标签3">
+                    <input type="button" class="com_sele btn btn-default" value="标签4">
+                    <input type="button" class="com_sele btn btn-default" value="江南水乡">
+                    <input type="button" class="com_sele btn btn-default" value="标签2">
+                    <input type="button" class="com_sele btn btn-default" value="标签3">
+                    <input type="button" class="com_sele btn btn-default" value="标签4">
+                    <input type="button" class="com_sele btn btn-default" value="江南水乡">
+                    <input type="button" class="com_sele btn btn-default" value="标签2">
+                    <input type="button" class="com_sele btn btn-default" value="标签3">
+                    <input type="button" class="com_sele btn btn-default" value="标签4">
+                    <input type="button" class="com_sele btn btn-default" value="江南水乡">
+                    <input type="button" class="com_sele btn btn-default" value="标签2">
+                    <input type="button" class="com_sele btn btn-default" value="标签3">
+                    <input type="button" class="com_sele btn btn-default" value="标签4">
+                </div>
+                <div class="input_rural">
+                    <input type="button" id="com_true" class="btn btn-primary" value="确认提交">
+                    <input type="button" id="com_false" class="btn btn-default" value="重置">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- 底部 -->
+    <div id="footer">
+        <p id="copyright">Copyright &copy; 2017 Beautiful rural. All rights reserved.</p>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/zhang.js"></script>
+    <script type="text/javascript" src="js/wangEditor.min.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/person.js"></script>
+</body>
+
+</html>

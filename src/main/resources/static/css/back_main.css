@@ -1,0 +1,52 @@
+#main{
+    width: 100%;
+    padding: 60px 0 0 160px;
+}
+
+#main_header{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main_sec{
+    display: inline-block;
+    margin: 0 10px;
+    width: 210px;
+    height: 100px;
+    padding-top: 24px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #1CAE9A;
+    border-radius: 6px;
+}
+
+#main_view{
+    margin: 60px auto;
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.view_line{
+    width: 100%;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.view_line::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.view_time{
+    float: left;
+    width: 50%;
+    color: #1CAE9A;
+}
+
+.view_number{
+    float: left;
+    width: 50%;
+}

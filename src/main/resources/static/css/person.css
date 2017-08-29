@@ -1,0 +1,557 @@
+#header {
+    display: none;
+    background-color: #515151;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 36px;
+}
+
+#main {
+    padding-top: 30px;
+}
+
+#subnav_container {
+    float: left;
+    width: 170px;
+    border: 1px solid #DFDFDF;
+    border-radius: 6px;
+}
+
+#subnav_person {
+    padding: 10px 0 6px 0;
+    border-bottom: 1px solid #DFDFDF;
+    text-align: center;
+}
+
+#subnav_person>img {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#subnav_person>p {
+    font-size: 16px;
+    color: #444;
+}
+
+#subnav {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.subnav_li {
+    color: #444;
+    padding: 7px 0;
+}
+
+.subnav_li:last-child {
+    padding-bottom: 15px;
+}
+
+.inow_li,
+.subnav_li:hover {
+    background-color: #DFDFDF;
+    color: black;
+}
+
+#modify {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    width: 680px;
+    height: 500px;
+    padding-bottom: 30px;
+    border: 1px solid #DFDFDF;
+    border-radius: 6px;
+}
+
+.modify_sec{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.modify_sec:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.inow_sec{
+    display: block;
+}
+
+.modify_header{
+    padding: 40px 0 20px 150px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.basic_line, .su_line{
+    display: block;
+    margin-top: 12px;
+    padding-left: 150px;
+    min-height: 40px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+.su_line{
+    margin-bottom: 20px;
+}
+
+.basic_line>div, .basic_line>input{
+    float: left;
+}
+
+.basic_word{
+    width: 80px;
+}
+
+.basic_txt, .basic_input, .su_input{
+    width: 260px;
+    min-height: 34px;
+}
+
+.basic_txt{
+    display: block;
+    padding-left: 10px;
+}
+
+/*#person_tip{
+    margin-top: 6px;
+    width: 100%;
+    height: 65px;
+    resize: none;
+}
+
+#person_tip:after{
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+/*#tip_true, #tip_fault{
+    margin-left: 10px;
+    float: right;
+    margin-top: 5px;
+    width: 60px;
+    font-size: 12px;
+}*/
+
+/*.textarea_con{
+    width: 260px;
+}*/
+
+#headerpic{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#addpic{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    color: #003399;
+    text-decoration: underline;
+}
+
+#person_addimg{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+#file{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: Alpha(opacity=0);
+    opacity: 0;
+}
+
+.myradio{
+    float: left;
+    padding-right: 20px;
+}
+
+.myradio>input{
+    margin-left: 6px;
+}
+
+#basic_change{
+    position: absolute;
+    bottom: 40px;
+    left: 230px;
+    width: 180px;
+}
+
+#basic_true, #basic_false{
+    position: absolute;
+    bottom: 40px;
+    width: 80px;
+}
+
+#basic_true{
+    left: 230px;
+}
+
+#basic_false{
+    left: 330px;
+}
+
+#basic_su{
+    position: absolute;
+    bottom: 0px;
+    left: 230px;
+    width: 180px;
+}
+
+#modify_su{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.su_word{
+    float: left;
+    margin-left: -33px;
+    font-size: 16px;
+}
+
+.su_input{
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+#su_true{
+    margin-left: 80px;
+}
+
+.su_check{
+    display: inline-block;
+    float: left;
+    margin-left: 80px;
+    width: 156px;
+    height: 34px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.su_get{
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+    width: 104px;
+    height: 34px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#verify{
+    display: none;
+    font-size: 12px;
+    background-color: #ccc;
+    border-color: #999;
+    color: black;
+    text-align: center;
+    cursor: no-drop;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.pageable-item {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    min-width: 50px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+}
+
+.pageable-item:hover {
+    color: black;
+    background-color: #eee;
+    text-decoration: none;
+}
+
+.pageable-first {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.pageable-end {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.pageable-active {
+    color: black;
+    background-color: #eee;
+}
+
+.pageable-disable:hover {
+    cursor: no-drop;
+    color: #337ab7;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+#basic_return{
+    margin-left: 230px;
+    margin-top: 2px;
+    width: 180px;
+}
+
+#colt_header{
+    padding: 30px 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#byrural, #byword{
+    margin: 0 30px;
+    width: 100px;
+    height: 40px;
+}
+
+#word_main, #rural_main{
+    width: 100%;
+    height: 100%;
+}
+
+#word_ul{
+    padding: 20px 100px 10px 110px;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+#page{
+    display: table;
+    position: absolute;
+    bottom: 0px;
+    left: 120px;
+}
+
+.word_sec{
+    width: 100%;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.word_number{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.word_time{
+    display: inline-block;
+    margin-left: 10px;
+    color: #999;
+    color: #222;
+}
+
+.word_sec span{
+    margin-left: 20px;
+    color: #CC0033;
+}
+
+.rural_sec{
+    position: relative;
+    float: left;
+    margin: 20px 1.5%;
+    width: 22%;
+}
+
+.rural_img{
+    width: 100%;
+    height: 120px;
+}
+
+.rural_heart{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #CC0033;
+}
+
+.rural_time{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    text-shadow: 0 0 4px black;
+}
+
+.rural_title{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    text-shadow: 0 0 4px black;
+}
+
+#mycomments{
+    overflow: scroll;
+    padding-top: 40px;
+}
+
+#name, #area, #file_con{
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    height: 50px;
+}
+
+#file_con{
+    margin-bottom: 0;
+    position: relative;
+    font-size: 16px;
+}
+
+#file_cover, #cover_button{
+    display: block;
+    position: absolute;
+    left: 120px;
+    top: -2px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+}
+
+#file_cover{
+    filter: Alpha(opacity=0);
+    opacity: 0;
+}
+
+#wang_editor{
+    margin: 0 auto;
+    width: 90%;
+    height: 300px;
+}
+
+.com_word{
+    margin: 40px 0 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.com_line{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.com_sele{
+    float: left;
+    margin: 10px 1%;
+    width: 23%;
+    height: 40px;
+}
+
+#com_true, #com_false{
+    width: 100px;
+    height: 40px;
+}
+
+.input_rural{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+#modify_infor{
+    position: relative;
+}
+
+#table_container{
+    margin: 30px auto 0 auto;
+    height: 400px;
+    overflow: scroll;
+    border-bottom: 1px solid #ddd;
+}
+
+.readed{
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+    padding: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.remove{
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#operation{
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}
+
+#ope_check{
+    position: relative;
+    top: 10px;
+    margin: 0 20px 0 2px;
+    height: 30px;
+    width: 30px;
+}
+
+#modal-view{
+    width: 400px;
+}
+
+#modal-view .modal-header{
+    border-bottom: 1px solid #ccc;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#modal-view .modal-body{
+    padding-bottom: 10px;
+}
+
+#modal-view .modal-footer{
+    border-top: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+#footer {
+    margin-top: 45px;
+    padding: 40px 0;
+    background-color: #515151;
+    color: white;
+}
+
+#copyright {
+    text-align: center;
+}

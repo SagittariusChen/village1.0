@@ -1,0 +1,145 @@
+body{
+    background-color: #F8F8F8;
+}
+
+#header,
+#main{
+    background-color: white;
+}
+
+#main{
+    margin: 20px 40px 20px 200px;
+    padding: 0;
+    width: 784px;
+    width: calc(100% - 240px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#main_head{
+    padding: 20px 0 10px 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.head_select{
+    float: left;
+    margin-right: 16px;
+    color: #666;
+}
+
+.head_select:first-child{
+    color: #000;
+}
+
+.main_sec{
+     min-height: 576px; 
+}
+
+.main_sec:last-child{
+    display: none;
+}
+
+#main_tip{
+    padding: 20px 10px 10px 0px;
+}
+
+#all_select, #all_delect{
+    float: left;
+    margin-left: 6px;
+    padding: 0 12px;
+    height: 34px;
+}
+
+#main_serchcon{
+    float: right;
+}
+
+#search{
+    float: left;
+    width: 200px;
+}
+
+#search_input{
+    float: left;
+    margin-left: 6px;
+    padding: 4px 12px;
+    height: 34px;
+}
+
+.main_view, .main_delect{
+    padding: 0 6px;
+    height: 24px;
+    font-size: 12px;
+}
+
+#page{
+    margin: 0 0 20px 10px;
+}
+
+.pageable-item {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    min-width: 50px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+}
+
+.pageable-item:hover {
+    color: black;
+    background-color: #eee;
+    text-decoration: none;
+}
+
+.pageable-first {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.pageable-end {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.pageable-active {
+    color: black;
+    background-color: #eee;
+}
+
+.pageable-disable:hover {
+    cursor: no-drop;
+    color: #337ab7;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.modal-dialog{
+    width: 642px;
+}
+
+#main_select{
+    margin: 20px auto;
+    width: 642px;
+}
+
+#wang_editor{
+     margin: 0 auto; 
+     width: 642px; 
+}
+
+.w-e-text-container{
+    height: 400px !important;
+}
+
+#input_con{
+    text-align: center;
+}
+
+#put_editor, #put_cancle {
+    margin-top: 30px;
+}
